@@ -13,4 +13,4 @@ Feel free to file pull request. In your pull request, you need to add following 
 ## Contact
 
 * [Slack](https://intel-corp.herokuapp.com/): Join #general channel to discuss multus-cni and other related topics.
-* [Mailing list](https://groups.google.com/forum/#!forum/kubernetes-sig-network): We use sig-network mailing list.
+* [Mailing list](https://groups.google.com/forum/#!forum/network-plumbing-working-group): We use sig-network mailing list.
