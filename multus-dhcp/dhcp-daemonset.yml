@@ -49,12 +49,20 @@ spec:
         securityContext:
           privileged: true
         volumeMounts:
-        - name: host
-          mountPath: /host
+        - name: socketpath
+          mountPath: /host/run/cni
+        - name: procpath
+          mountPath: /host/proc
+        - name: netnspath
+          mountPath: /host/var/run/netns
+          mountPropagation: HostToContainer
       volumes:
         - name: socketpath
           hostPath:
             path: /run/cni
-        - name: host
+        - name: procpath
           hostPath:
-            path: /
+            path: /proc
+        - name: netnspath
+          hostPath:
+            path: /run/netns
