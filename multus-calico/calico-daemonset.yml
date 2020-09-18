@@ -388,7 +388,7 @@ subjects:
   namespace: kube-system
 ---
 kind: DaemonSet
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: calico-node
   namespace: kube-system
@@ -398,6 +398,7 @@ spec:
   selector:
     matchLabels:
       k8s-app: calico-node
+      tier: node
   updateStrategy:
     type: RollingUpdate
     rollingUpdate:
@@ -406,6 +407,7 @@ spec:
     metadata:
       labels:
         k8s-app: calico-node
+        tier: node
       annotations:
         scheduler.alpha.kubernetes.io/critical-pod: ''
     spec:
@@ -586,7 +588,7 @@ metadata:
   name: calico-node
   namespace: kube-system
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: calico-kube-controllers
@@ -599,6 +601,9 @@ spec:
   replicas: 1
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      k8s-app: calico-kube-controllers
   template:
     metadata:
       name: calico-kube-controllers
