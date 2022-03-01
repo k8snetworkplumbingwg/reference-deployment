@@ -4,7 +4,7 @@
 
 1. Follow KinD's [quickstart guide](https://kind.sigs.k8s.io/docs/user/quick-start/) online. Once you are comfortable with starting/deleting a cluster, return here. This guide assumes you know what Multus and Whereabouts are if you are here. If you're new to either, check out these links first... [Multus](https://github.com/k8snetworkplumbingwg/multus-cni) and [Whereabouts](https://github.com/k8snetworkplumbingwg/whereabouts).
 
-2. Run `kind-multus-whereabouts.sh <number-of-nodes>` to setup a cluster with `number-of-nodes` nodes.
+2. Run `./kind-multus-whereabouts.sh <number-of-nodes>` to setup a cluster with `number-of-nodes` nodes. If no argument is provided, defaults to 3 nodes.
    
    - check your multus pods are healthy in kube-system namespace
 	
