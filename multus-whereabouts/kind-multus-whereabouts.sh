@@ -26,6 +26,8 @@ EOF
 
   # install macvlan
   kubectl apply -f cni-install.yml
+
+  exit 0
 }
 
 

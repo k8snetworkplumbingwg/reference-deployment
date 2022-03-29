@@ -4,8 +4,6 @@ nodes:
   - role: control-plane
   - role: worker
   - role: worker
-  - role: worker
-  - role: worker
 # Note: uncomment if you install cni plugin by yourself
 #networking:
 #  disableDefaultCNI: true
