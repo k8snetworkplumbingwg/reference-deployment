@@ -12,5 +12,4 @@ Feel free to file pull request. In your pull request, you need to add following 
 
 ## Contact
 
-* [Slack](https://intel-corp.herokuapp.com/): Join #general channel to discuss multus-cni and other related topics.
-* [Mailing list](https://groups.google.com/forum/#!forum/network-plumbing-working-group): We use sig-network mailing list.
+Please visit [the NPWG community page](https://github.com/k8snetworkplumbingwg/community) for more information.
