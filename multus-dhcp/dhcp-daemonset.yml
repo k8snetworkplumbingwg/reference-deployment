@@ -37,7 +37,7 @@ spec:
           mountPath: /host/run/cni
       containers:
       - name: kube-dhcp
-        # Based on: https://github.com/k8snetworkplumbingwg/reference-deployment/multus-dhcp/blob/master/Dockerfile
+        # Based on: https://github.com/k8snetworkplumbingwg/reference-deployment/blob/master/multus-dhcp/Dockerfile
         image: quay.io/aneeshkp/cni-dhcp-daemon:latest
         resources:
           requests:
