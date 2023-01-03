@@ -130,7 +130,7 @@ spec:
       serviceAccountName: multus
       containers:
       - name: kube-multus
-        image: nfvpe/multus:latest
+        image: ghcr.io/k8snetworkplumbingwg/multus-cni:latest
         command: ["/entrypoint.sh"]
         args:
         - "--multus-conf-file=/tmp/multus-conf/70-multus.conf"

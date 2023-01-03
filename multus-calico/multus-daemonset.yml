@@ -139,7 +139,7 @@ spec:
       serviceAccountName: multus
       containers:
       - name: kube-multus
-        image: nfvpe/multus:latest
+        image: ghcr.io/k8snetworkplumbingwg/multus-cni:latest
         env:
         - name: KUBERNETES_NODE_NAME
           valueFrom:
